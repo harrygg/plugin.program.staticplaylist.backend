@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<addon id="plugin.program.staticplaylist.backend" name="Static Playlist PVR Backend" version="1.0.0" provider-name="HarryDoubleG">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.garepobg" version="0.1.3"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="exec.py"/>
+  <extension point="xbmc.service" library="service.py" start="start" />
+  <extension point="xbmc.addon.metadata">
+        <summary>Static Playlist PVR Backend</summary>
+        <summary lang="en">Static Playlist PVR Backend</summary>
+        <description lang="en">Autmatically downloads playlists with dynamic channel URLs and converts them to static URLs</description>
+        <disclaimer lang="en">Static Playlist PVR  Backend</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://kodibg.org/forum/</forum>
+        <website>https://github.com/harrygg/plugin.program.staticplaylist.backend</website>
+  </extension>
+</addon>

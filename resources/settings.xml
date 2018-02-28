@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!-- General -->
+    <category label="Плейлиста">
+      <setting label="" type="bool" id="firstrun" visible="false" default="true"/>
+      <setting label="УРЛ до плейлистата" id="url" type="text" default=""/>
+      <setting type="sep"/>
+      <setting label="Запази плейлистата в друга директория" type="bool"   id="copy_playlist" default="false"/>
+      <setting label="Път до директорията" type="folder" id="copy_to_folder" default="" option="writeable" visible="eq(-1,true)"/>
+      <setting type="sep"/>
+      <setting label="Генерирай плейлиста на всеки N часа" type="slider" id="run_on_interval" default="12" range="1,1,24" option="int"/>
+    </category>
+    </category>
+    <category label="Експертни">
+      <setting type="sep"/>
+      <setting label="Разреши свързване на всички мрежови интерфейси:" type="bool" id="bind_all" default="false" />
+      <setting label="Порт на бекенда:" type="text" id="port" default="18912" />
+      <setting label="Използвано IP на видео потоците в плейлистата:" type="text" id="stream_ip" default="127.0.0.1" />
+    </category>
+    <category label="Други">
+      <setting label="Обедини с друга плейлиста:" type="bool" id="append_playlist" default="false"/>
+      <setting label="M3U файл с другата плейлиста:" id="appended_playlist_path" type="file" values="" mask="*.m3u" visible="eq(-1,true)" />
+      <!-- <setting label="Добавяне" type="enum"   id="append" values="Преди основната|След основната"  default="0" visible="eq(-2,true)" /> -->
+      <setting type="sep"/>
+      <setting label="Разширен журнал (Дебъг лог):" type="bool"   id="debug" default="false"/>
+    </category>
+</settings>
